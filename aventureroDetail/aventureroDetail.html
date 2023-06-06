@@ -1,0 +1,17 @@
+<template>
+    <h1>Hijo</h1>
+    <ul>
+      <template  for:each={aventurerosChild} for:item="adv" >
+        <li key={adv.id}>
+          <div class="user-card">
+            <div class="avatar">
+                <img src={adv.photoUrl} alt="User Avatar" />
+            </div>
+            <div class="user-details">
+                <p>Nombre: {adv.name}</p>
+            </div>
+          </div> 
+        </li>
+      </template>
+    </ul>  
+</template>
